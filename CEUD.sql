@@ -1,3 +1,12 @@
+-- create table
+CREATE TABLE CEUD (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
 -- insert data
 INSERT INTO CEUD (id, name, description) VALUES
 (1, 'CEUD Example 1', 'This is an example entry for CEUD.'),
